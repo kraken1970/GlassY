@@ -1,0 +1,733 @@
+@import 'normalize.css/normalize.css';
+@import './libs/bootstrap-grid-3.3.1.min.css';
+@import './fonts.css';
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  width: auto\9;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main__body {
+  width: 1200px;
+  background-color: #87a193;
+  background-image: url(../images/creams-1.png);
+  background-repeat: no-repeat;
+  background-position: 276px 81px;
+  padding-right: 27px;
+  padding-left: 27px;
+  margin-right: 26px;
+}
+
+.main__head {
+  padding-top: 15px;
+}
+
+.head__container-left {
+  float: left;
+  font-family:"RobotoBold";
+  font-size: 16px;
+  & li {
+    display: inline-block;
+    padding-right: 25px;
+    & a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  }
+}
+
+.head__container-right {
+  float: right;
+  padding-top: 15px;
+  & p {
+    text-align: right;
+    color: #ffffff;
+    font-family:"RobotoBold";
+    font-size: 14px;
+    & b {
+      font-size: 22px;
+    }
+  }
+}
+.main__head .right {
+  font-family:"RobotoMedium";
+  font-size: 14px;
+  & li {
+    display: inline-block;
+    padding-left: 15px;
+    & a {
+      color: #ffffff;
+    }
+  }
+}
+
+.head__container-nav-right button {
+  padding-left: 12px;
+  margin-left: 10px;
+}
+/* buttons white*/
+.circle {
+  background-color: rgba(255,255,255,0.5);
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  border: 0;
+  outline: 0;
+}
+
+.circle:hover {
+  background-image: url(../images/lens-hover.png);
+  width: 33px;
+  height: 33px;
+}
+
+.oval.users:hover {
+  background-image: url(../images/users-hover.png);
+  width: 93px;
+  height: 32px;
+  background-position: 0 0;
+}
+
+.oval {
+  background-color: rgba(255,255,255,0.5);
+  padding-right: 20px;
+  height: 32px;
+  border-radius: 32px;
+  border: 0;
+  font-family:"RobotoMedium";
+  font-size: 14px;
+  color: #ffffff;
+  outline: 0;
+  cursor: pointer;
+    &.users {
+      background-image: url(../images/users-icon.png);
+      background-repeat: no-repeat;
+      background-position: 7px center;
+      padding-left: 30px;
+  }
+    &.basket {
+      background-image: url(../images/basket-icon.png);
+      background-repeat: no-repeat;
+      background-position: 7px center;
+      padding-left: 30px;
+  }
+  &.sorted {
+    padding: 0 15px;
+    font-size: 16px;
+  }
+  &.sliding {
+    background-image: url(../images/slider.png);
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    width: 217px;
+  }
+}
+
+.advertising__title {
+  max-width: 673px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  text-align: center;
+  font-family:"RobotoBold";
+  font-weight: 900;
+  font-size: 60px;
+  color: #ffffff;
+}
+
+.radio_and_red__button {
+  padding-left: 20px;
+}
+.red_button {
+  height: 63px;
+  border-radius: 63px;
+  border: 0;
+  background-color: #ffffff;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  color: #ffffff;
+  font-family:"RobotoBold";
+  font-size: 31px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  outline: 0; 
+}
+
+.radiobut,
+.radio-fat,
+.fillers-check {
+  display: none;
+}
+
+.radiobut + label span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+.radiobut:checked + label span {
+  background: 
+}
+
+.fillers-check + label span {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: url(../images/check-out.png);
+  width: 20px;
+  height: 20px;
+}
+
+.fillers-check:checked + label span {
+  background-image: url(../images/check-in.png);
+}
+
+.red_button.by_two {
+  margin-left: 335px;
+}
+
+.supplements {
+  margin-top: 40px;
+}
+
+.supplement {
+  display: inline-block;
+  padding-left: 40px;
+}
+
+.supplement.part_l {
+  background-image: url(../images/raspberri.png);
+  background-repeat: no-repeat;
+  background-position: 20px;
+  width: 560px;
+  height: 229px;
+  border-radius: 20px 20px 20px 20px;
+  float: left;
+}
+
+.supplement.part_r {
+  background-image: url(../images/shoko.png);
+  background-repeat: no-repeat;
+  background-position: 20px;
+  width: 560px;
+  height: 229px;
+  border-radius: 20px 20px 20px 20px;
+  float: right;
+
+}
+h2.dop {
+  font-family: "RobotoBold";
+  font-size: 35px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.dop_description {
+  font-family: "RobotoBold";
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.red_button.i_want {
+  font-size: 18px;
+  height: 46px;
+  border-radius: 46px;
+  float: right;
+  margin-right: 20px;
+}
+/* хиты продаж*/
+.bestsellers {
+  margin-top: 40px;
+  padding-left: 22px;
+}
+
+.hit {
+  display: inline-block;
+  box-sizing: border-box;
+  background-image: url(../images/creams/creams1.png);
+  background-repeat: no-repeat;
+  width: 267px;
+  height: 267px;
+  margin-right: 11px;
+  &.hit_2 {
+    background-image: url(../images/creams/creams2.png);
+  }
+  &.hit_3 {
+    background-image: url(../images/creams/creams3.png);
+  }
+  &.hit_4 {
+    background-image: url(../images/creams/creams4.png);
+  }
+  &.hit_5 {
+    background-image: url(../images/creams/creams5.png);
+  }
+  &.hit_6 {
+    background-image: url(../images/creams/creams6.png);
+  }
+  &.hit_7 {
+    background-image: url(../images/creams/creams7.png);
+  }
+  &.hit_8 {
+    background-image: url(../images/creams/creams8.png);
+  }
+  &.hit_9 {
+    background-image: url(../images/creams/creams9.png);
+  }
+  &.hit_10 {
+    background-image: url(../images/creams/creams10.png);
+  }
+  &.hit_11 {
+    background-image: url(../images/creams/creams11.png);
+  }
+  &.hit_12 {
+    background-image: url(../images/creams/creams12.png);
+  }
+}
+
+.hit img {
+  float: left;
+}
+.hit .cost {
+  font-family:"RobotoBold";
+  color: #ffffff;
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+  font-size: 30px;
+  & span {
+    font-size: 45px;
+  }
+  padding-top: 140px;
+}
+
+.short-description {
+  font-family:"RobotoMedium";
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: underline;
+}
+/*About our shop*/
+.about-shop {
+  margin-top: 40px;
+  padding: 0 20px;
+  background-image: url(../images/wafer-fon.png);
+  background-repeat: no-repeat;
+  min-height: 306px;
+  font-family:"RobotoRegular";
+  font-weight: 400;
+  color: #323232;
+  font-size: 16px;
+  line-height: 22px;
+  & .subtitle {
+    font-family:"RobotoMedium";
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.about-shop__text {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 540px;
+  padding-right: 18px;
+  & .mini-ice {
+    background-image: url(../images/mini-ice.png);
+    background-repeat: no-repeat;
+    padding-left: 55px;
+    padding-top: 10px;
+  }
+  & .leaf {
+    background-image: url(../images/leaf.png);
+    background-repeat: no-repeat;
+    padding-left: 55px;
+    padding-top: 10px;
+  }
+  & .cow {
+    background-image: url(../images/cow.png);
+    background-repeat: no-repeat;
+    padding-left: 55px;
+    padding-top: 10px;
+  }
+  & .thermometer {
+    background-image: url(../images/thermometer.png);
+    background-repeat: no-repeat;
+    padding-left: 55px;
+    padding-top: 10px;
+  }
+}
+/*blog and subscribe*/
+.two-cards {
+  margin-top: 35px;
+}
+
+.blog-subskribe {
+  display: inline-block;
+  vertical-align: middle;
+  width: 560px;
+  height: 220px;
+  padding-left: 15px;
+  &.blog {
+    background-image: url(../images/straw_fon-icon.png);
+    background-repeat: no-repeat;
+    & h6 {
+      color: #5a5a5a;
+      font-family: "RobotoMedium";
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: -25px;
+      margin-top: 25px;
+    }
+    & a {
+      font-family: "RobotoBold";
+      font-size: 24px;
+      color: #353535;
+      text-decoration: underline;
+    }
+  }
+  &.subscribe {
+    background-image: url(../images/post-card.png);
+    margin-left: 22px;
+    color: #5a5a5a;
+    font-family: "RobotoRegular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    padding-top: 30px;
+    padding-left: 28px;
+  }
+}
+
+.mail-submit {
+  margin-top: 40px;
+}
+
+.mail {
+  width: 368px;
+  height: 46px;
+  background-color: #ffffff;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+  color: #999;
+  font-family: "RobotoRegular";
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 10px;
+}
+
+.red_button.send {
+  font-size: 17px;
+  height: 44px;
+  border-radius: 44px;
+  margin-left: 10px;
+}
+/*road map*/
+.road_map {
+  margin-top: 40px;
+  background-image: url(../images/map-icon.png);
+  background-repeat: no-repeat;
+  min-height: 430px;
+  width: 1200px;
+  margin-left: -27px;
+}
+
+.feedback_form {
+  width: 302px;
+  height: 305px;
+  background-color: rgba(255, 255, 255, 0.98);
+  border-radius: 15px;
+  float: right;
+  margin-top: 65px;
+  margin-right: 27px;
+  padding-left: 26px;
+}
+
+.feedback_form .adress {
+  font-family: "RobotoRegular";
+  color: #343434;
+  font-size: 14px;
+  line-height: 20px;
+  & span {
+    font-family: "RobotoBold";
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.red_button.send.feedback {
+  margin-top: 15px;
+}
+
+.main-footer {
+  line-height: 76px;
+  vertical-align: middle;
+  & nav {
+    display: inline-block;
+    & li {
+      list-style-type: none;
+      & a {
+        font-family: "RobotoRegular";
+        font-size: 13px;
+        color: #ffffff;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.main-footer__folk-net {
+  width: 25%;
+}
+.main-footer__folk-net li {
+  display: inline-block;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.main-footer__documentation {
+  width: 50%;
+  margin-left: 80px;
+  & li {
+    line-height: 200%;
+  }
+}
+
+.purveyor-a {
+  font-family: "RobotoBold";
+  font-weight: 700;
+  background-image: url(../images/heart-icon.png);
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+}
+
+.purveyor-fabrication li a {
+  padding-left: 20px;
+}
+
+.main-footer__made-in {
+  float: right;
+  margin-top: 25px;
+  & li {
+    line-height: 200%;
+    
+  }
+}
+
+.final-made {
+  color: #fefefe;
+  font-family: "RobotoRegular";
+  font-size: 12px;
+}
+
+.align_vertical {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* Pop-up forms */
+/*общая*/
+.modal-content {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  display: none;
+  padding: 15px;
+  color: #000000;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  &.search {
+    width: 272px;
+    margin-left: -151px;
+  }
+  &.catalog {
+    width: 143px;
+    margin-left: -90px;
+    & hr {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    border-top: 1px solid #eee;
+    padding-bottom: 0;
+    }
+  }
+}
+/*кнопка-крест закрытие*/
+.modal-content-close {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  right: -34px;
+  & b {
+    font-size: 24px;
+  }
+}
+/* поле формы поиска*/
+input.icon-search {
+  color: #999;
+  font-family: "RobotoRegular";
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 10px;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+  width: 240px;
+  outline: 0;
+}
+/*форма каталог*/
+.list-of-species {
+  list-style-type: none;
+  padding-left: 7px;
+  font-family: "RobotoRegular";
+  font-size: 14px;
+  line-height: 28px;
+  & a {
+    color: #343434;
+  }
+}
+
+ .news {
+    font-family: "RobotoBold";
+    color: #000000;
+    padding-left: 7px;
+  }
+  /*pages catalog*/
+  .catalog__body {
+  width: 1200px;
+  background-color: #87a193;
+  padding-right: 27px;
+  padding-left: 27px;
+  margin-right: 26px;
+}
+
+.bread-crumbs {
+  margin-top: -53px;
+}
+.bread-crumbs__cream {
+  padding-left: 0;
+}
+
+.bread-crumbs__cream li {
+  list-style-type: none;
+  display: inline-block;
+  & a {
+    font-family: "RobotoRegular";
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: underline;
+    &.home-aktiv {
+      text-decoration: none;
+    }
+  }
+}
+
+.bread-crumbs__cream-arrow::after {
+  content: "\00A0»\00A0";
+  color: #ffffff;
+}
+
+.catalog-h1 {
+  font-family: "RobotoBold";
+  color: #ffffff;
+  font-size: 35px;
+  line-height: 30px;
+}
+/*long buttons in catalog*/
+.choose-ice-cream label {
+  font-family: "RobotoMedium";
+  font-size: 14px;
+  color: #ffffff;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.wrap-button {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 5px;
+}
+
+.fat_radio,
+.many_check {
+  line-height: 30px;
+}
+
+.radio-fat + label span {
+  display: inline-block;
+  background-image: url(../images/radio-off.png);
+  width: 21px;
+  height: 22px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.radio-fat:checked + label span {
+  background-image: url(../images/radio-on.png);
+}
+
+.two-buttons .marker {
+  vertical-align: middle;
+  padding-right: 5;
+}
+
+.two-buttons .apply {
+  padding: 0 30px;
+  border: 2px solid #ffffff;
+}
+
+.many_check label {
+  margin-right: 5px;
+}
+
+.catalog-pages__number {
+  float: right;
+  & li {
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 5px;
+    &.i_home {
+      background-color: #ffffff;
+      width: 26px;
+      height: 26px;
+      border-radius: 13px;
+    }
+    & a {
+      font-family: "RobotoMedium";
+      font-size: 16px;
+      color: #ffffff;
+      & span {
+        color: rgba(255,255,255,0.5);
+      }
+      &.i_home-n {
+        color: #353535;
+      }
+    }
+  }
+}
+
+.catalog-pages {
+  margin-top: 75px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+
+
